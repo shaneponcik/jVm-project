@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>jVectorMap demo</title>
+  <link rel="stylesheet" href="jquery-jvectormap-2.0.3.css" type="text/css" media="screen" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="jquery-jvectormap-2.0.3.min.js"></script>
+  <script src="jquery-jvectormap-world-mill.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div id="map" style="width: 600px; height: 400px"></div>
+  <script>
+    $(function() {
+      $('#map').vectorMap({
+        map: 'world_mill',
+        onRegionTipShow: function(e, el, code) {
+          el.html(el.html() + ': n/a');
+        },
+        regionsSelectable: true,
+        regionStyle: {
+          initial: {
+            fill: "white"
+          },
+          selected: {
+            fill: "black"
+          }
+        }
+      });
+    });
+
+  </script>
+</body>
+
+</html>
