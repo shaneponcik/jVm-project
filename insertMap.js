@@ -1,22 +1,33 @@
 $(function() {
   $('#map').vectorMap({
     map: 'regions_mill',
-    backgroundColor: "#3987c9",
+    backgroundColor: "white",
     onRegionTipShow: function(e, el, code) {
       el.html('<b>' + el.html() + '</b></br>' +
-        '<b>Number of Opportunities: </b>' + myData[code].numOpps);
+        '<b>Number of Placements: </b>' + myData[code].numOpps);
     },
     regionsSelectable: true,
     onRegionClick: function(event, code) {
       getRegionURL(code);
     },
-    series: {
-      regions: [{
-        attribute: 'fill'
-      }]
+    regionStyle: {
+      initial: {
+        fill: '#dbdbdb',
+        "fill-opacity": 1,
+        stroke: 'none',
+        "stroke-width": 0,
+        "stroke-opacity": 1
+      },
+      hover: {
+        fill: '#61b01b',
+        "fill-opacity": 0.8,
+        cursor: 'pointer'
+      },
+      selected: {
+        fill: '#61b01b'
+      },
+      selectedHover: {}
     }
   });
-
-  var mapObject = $("#map").vectorMap('get', 'mapObject');
-  mapObject.series.regions[0].setValues(getColors());
+  $('#map').vectorMap('get', 'mapObject').updateSize();
 });
