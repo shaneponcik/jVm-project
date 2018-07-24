@@ -1,0 +1,45 @@
+{"ME":{
+  "color": "yellow",
+  "redirect": "https://en.wikipedia.org/wiki/Middle_East",
+  "numOpps": "1"
+},
+"EA":{
+  "color": "red",
+  "redirect": "https://en.wikipedia.org/wiki/East_Asia",
+  "numOpps": "5"
+},
+"NA":{
+  "color": "orange",
+  "redirect": "https://en.wikipedia.org/wiki/North_Africa",
+  "numOpps": "6"
+},
+"CA":{
+  "color": "blue",
+  "redirect": "https://en.wikipedia.org/wiki/Central_Asia",
+  "numOpps": "7"
+},
+"AM":{
+  "color": "brown",
+  "redirect": "https://en.wikipedia.org/wiki/Americas",
+  "numOpps": "1"
+},
+"US":{
+  "color": "green",
+  "redirect": "https://en.wikipedia.org/wiki/United_States",
+  "numOpps": "9"
+},
+"SEA":{
+  "color": "purple",
+  "redirect": "https://en.wikipedia.org/wiki/Southeast_Asia",
+  "numOpps": "5"
+},
+"EU":{
+  "color": "fuchsia",
+  "redirect": "https://en.wikipedia.org/wiki/Europe",
+  "numOpps": "3"
+},
+"SSA":{
+  "color": "lime",
+  "redirect": "https://en.wikipedia.org/wiki/Sub-Saharan_Africa",
+  "numOpps": "4"
+}}
