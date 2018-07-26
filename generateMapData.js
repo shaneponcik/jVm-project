@@ -10,15 +10,6 @@ xmlhttp.onreadystatechange = function() {
 xmlhttp.open("GET", url, false);
 xmlhttp.send();
 
-function getColors() {
-  var colors = {},
-    key;
-  for (key in myData) {
-    colors[key] = myData[key].color;
-  }
-  return colors;
-}
-
 function getRegionURL(regionCode) {
   window.location = myData[regionCode].redirect;
 }
