@@ -1,5 +1,5 @@
 var xmlhttp = new XMLHttpRequest();
-var url = "http://127.0.0.1:8887/regionInfo.json";
+var url = "http://127.0.0.1:8887/GoCorpsMap_PreCanadianChanges/regionInfo.json";
 var myData;
 
 xmlhttp.onreadystatechange = function() {
